@@ -34,6 +34,25 @@ async function seed() {
     })
 
     console.log(`${createdProfiles.count} users created`, createdProfiles)
+
+
+    const createdPosts = await prisma.post.createMany({
+        data: [
+            {
+                userId: 1,
+                title: 'I am a post',
+                content: 'Let us get wild'
+            },
+            {
+                userId: 2,
+                title: 'I am a post',
+                content: 'Let us get wild',
+                published: true
+            },
+        ],
+    })
+
+    console.log(`${createdPosts.count} users created`, createdPosts)
     // Don't edit any of the code below this line
     process.exit(0)
 }
