@@ -92,6 +92,12 @@ async function seed() {
                 content: 'I am a Comment'
             },
             {
+                userId: 1,
+                postId: 1,
+                content: 'I am a reply',
+                parentId: 1
+            },
+            {
                 userId: 3,
                 postId: 3,
                 content: 'I am a Comment',
