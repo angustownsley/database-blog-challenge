@@ -14,6 +14,11 @@ async function seed() {
                 email: 'allymartin@email.com',
                 password: 'insecure',
             },
+            {
+                username: 'allstate',
+                email: 'allstaten@email.com',
+                password: 'insecure',
+            },
         ],
     })
 
@@ -30,6 +35,10 @@ async function seed() {
                 userId: 2,
                 bio: 'I am a user',
             },
+            {
+                userId: 3,
+                bio: 'I am a user',
+            },
         ],
     })
 
@@ -44,10 +53,31 @@ async function seed() {
                 content: 'Let us get wild'
             },
             {
+                userId: 1,
+                title: 'I am also a post',
+                content: 'Let us get more wild'
+            },
+            {
                 userId: 2,
                 title: 'I am a post',
                 content: 'Let us get wild',
                 published: true
+            },
+            {
+                userId: 2,
+                title: 'I am also a post',
+                content: 'Let us get more wild'
+            },
+            {
+                userId: 3,
+                title: 'I am a post',
+                content: 'Let us get wild',
+                published: true
+            },
+            {
+                userId: 3,
+                title: 'I am also a post',
+                content: 'Let us get more wild'
             },
         ],
     })
@@ -59,11 +89,16 @@ async function seed() {
             {
                 userId: 2,
                 postId: 1,
-                content: 'Let us get wild'
+                content: 'I am a Comment'
+            },
+            {
+                userId: 3,
+                postId: 3,
+                content: 'I am a Comment',
             },
             {
                 userId: 1,
-                postId: 2,
+                postId: 5,
                 content: 'I am a Comment',
             },
         ],
